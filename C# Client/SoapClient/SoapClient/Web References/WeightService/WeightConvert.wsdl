@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ws/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WeightConvert" targetNamespace="http://ws/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://192.168.1.69:8080/JavaWS/WeightConvert?xsd=1" namespace="http://ws/" />
+    </xsd:schema>
+  </types>
+  <message name="KgToPound">
+    <part name="parameters" element="tns:KgToPound" />
+  </message>
+  <message name="KgToPoundResponse">
+    <part name="parameters" element="tns:KgToPoundResponse" />
+  </message>
+  <message name="PoundToKg">
+    <part name="parameters" element="tns:PoundToKg" />
+  </message>
+  <message name="PoundToKgResponse">
+    <part name="parameters" element="tns:PoundToKgResponse" />
+  </message>
+  <portType name="WeightConvert">
+    <operation name="KgToPound">
+      <input wsam:Action="http://ws/WeightConvert/KgToPoundRequest" message="tns:KgToPound" />
+      <output wsam:Action="http://ws/WeightConvert/KgToPoundResponse" message="tns:KgToPoundResponse" />
+    </operation>
+    <operation name="PoundToKg">
+      <input wsam:Action="http://ws/WeightConvert/PoundToKgRequest" message="tns:PoundToKg" />
+      <output wsam:Action="http://ws/WeightConvert/PoundToKgResponse" message="tns:PoundToKgResponse" />
+    </operation>
+  </portType>
+  <binding name="WeightConvertPortBinding" type="tns:WeightConvert">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="KgToPound">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="PoundToKg">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WeightConvert">
+    <port name="WeightConvertPort" binding="tns:WeightConvertPortBinding">
+      <soap:address location="http://192.168.1.69:8080/JavaWS/WeightConvert" />
+    </port>
+  </service>
+</definitions>

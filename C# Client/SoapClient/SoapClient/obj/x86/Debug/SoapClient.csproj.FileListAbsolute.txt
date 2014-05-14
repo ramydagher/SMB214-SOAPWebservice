@@ -1,0 +1,8 @@
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\bin\Debug\SoapClient.exe.config
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\bin\Debug\SoapClient.exe
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\bin\Debug\SoapClient.pdb
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\obj\x86\Debug\SoapClient.Form1.resources
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\obj\x86\Debug\SoapClient.Properties.Resources.resources
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\obj\x86\Debug\SoapClient.csproj.GenerateResource.Cache
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\obj\x86\Debug\SoapClient.exe
+C:\Users\Ramy\Documents\GitHub\SMB214-SOAPWebservice-\C# Client\SoapClient\SoapClient\obj\x86\Debug\SoapClient.pdb

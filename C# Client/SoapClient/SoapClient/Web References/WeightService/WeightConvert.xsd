@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws/" targetNamespace="http://ws/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="KgToPound" type="tns:KgToPound" />
+  <xs:element name="KgToPoundResponse" type="tns:KgToPoundResponse" />
+  <xs:element name="PoundToKg" type="tns:PoundToKg" />
+  <xs:element name="PoundToKgResponse" type="tns:PoundToKgResponse" />
+  <xs:complexType name="PoundToKg">
+    <xs:sequence>
+      <xs:element name="Pound" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PoundToKgResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KgToPound">
+    <xs:sequence>
+      <xs:element name="Kg" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="KgToPoundResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
