@@ -133,11 +133,6 @@
             this.nudToKg.Name = "nudToKg";
             this.nudToKg.Size = new System.Drawing.Size(76, 20);
             this.nudToKg.TabIndex = 15;
-            this.nudToKg.Value = new decimal(new int[] {
-            15,
-            0,
-            0,
-            65536});
             // 
             // nudFromPound
             // 
